@@ -76,7 +76,7 @@ public class AsyncGetEvents extends Thread {
 
         StopWatch watch = new StopWatch();
         watch.start();
-        String responseData = request.execute("POST", "v1/register");
+        String responseData = request.execute("POST", "/v1/register");
         watch.stop();
         Log.i("perf", "net: v1/register: " + watch.toString());
 
@@ -108,7 +108,7 @@ public class AsyncGetEvents extends Thread {
                         request.setProperty("dont_block", "true");
                     }
                     JSONObject response = new JSONObject(request.execute("GET",
-                            "v1/events"));
+                            "/v1/events"));
 
                     JSONArray events = response.getJSONArray("events");
                     if (events.length() > 0) {

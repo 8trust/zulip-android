@@ -66,7 +66,7 @@ public class AsyncGetOldMessages extends ZulipAsyncPushTask {
         position = pos;
         this.receivedMessages = new ArrayList<Message>();
         Log.i("AGOM", "executing " + anchor + " " + before + " " + after);
-        execute("GET", "v1/messages");
+        execute("GET", "/v1/messages");
     }
 
     @Override
