@@ -37,7 +37,7 @@ public class ZulipApp extends Application {
     public static final String EMAIL = "email";
     private static ZulipApp instance;
     private static final String USER_AGENT = "ZulipMobile";
-    private static final String DEFAULT_SERVER_URL = "https://api.zulip.com/";
+    private static final String DEFAULT_SERVER_URL = "https://yuzu.makisu.be/api";
     private Person you;
     private SharedPreferences settings;
     private String api_key;

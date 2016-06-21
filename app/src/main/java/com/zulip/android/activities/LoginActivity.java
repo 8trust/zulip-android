@@ -120,7 +120,7 @@ public class LoginActivity extends FragmentActivity implements View.OnClickListe
         // if does not begin with "api.zulip.com" and if the path is empty, use "/api" as first segment in the path
         List<String> paths = serverUri.getPathSegments();
         if (!serverUri.getHost().startsWith("api.") && paths.isEmpty()) {
-            serverUri = serverUri.buildUpon().appendPath("api").build();
+            serverUri = serverUri.buildUpon().appendPath("").build();
         }
 
         ((ZulipApp) getApplication()).setServerURL(serverUri.toString());

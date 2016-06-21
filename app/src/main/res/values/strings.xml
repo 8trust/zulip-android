@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Zulip</string>
-    <string name="login_welcome_blurb">Welcome to Zulip!</string>
+    <string name="app_name">Makisu</string>
+    <string name="login_welcome_blurb">Welcome to Makisu!</string>
     <string name="login_button">Log in</string>
     <string name="username">Email</string>
     <string name="password">Password</string>

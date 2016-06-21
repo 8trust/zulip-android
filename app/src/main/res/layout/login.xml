@@ -9,6 +9,16 @@
     android:padding="16dp"
     >
 
+    <ImageView
+        android:contentDescription="@string/login_welcome_blurb"
+        android:adjustViewBounds="true"
+        android:id="@+id/android:icon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_horizontal"
+        android:padding="10dp"
+        android:icon="@drawable/ic_launcher" />
+
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
@@ -61,6 +71,8 @@
             android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
             android:gravity="end|center_vertical"
             android:layout_gravity="end"
+            android:visibility="invisible"
+            tools:visibility="invisible"
             />
 
         <EditText
@@ -71,8 +83,8 @@
             android:hint="@string/server_domain"
             android:inputType="textUri"
             android:selectAllOnFocus="true"
-            android:visibility="gone"
-            tools:visibility="visible"
+            android:visibility="invisible"
+            tools:visibility="invisible"
             />
     </LinearLayout>
 
@@ -82,7 +94,7 @@
         style="android:buttonStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="-80dp"
         android:text="@string/login_button" />
 
 
