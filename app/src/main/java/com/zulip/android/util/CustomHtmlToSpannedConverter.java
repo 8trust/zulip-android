@@ -41,6 +41,7 @@ import android.text.style.TypefaceSpan;
 import android.text.style.URLSpan;
 import android.text.style.UnderlineSpan;
 import android.util.AttributeSet;
+import android.view.View;
 import android.widget.ToggleButton;
 
 import org.ccil.cowan.tagsoup.AttributesImpl;
