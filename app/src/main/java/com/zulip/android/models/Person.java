@@ -86,7 +86,11 @@ public class Person {
     }
 
     public String getAvatarURL() {
-        return avatarURL;
+        if (avatarURL.startsWith("/")) {
+            return "https://yuzu.makisu.be" + avatarURL;
+        } else {
+            return avatarURL;
+        }
     }
 
     public void setAvatarURL(String avatarURL) {

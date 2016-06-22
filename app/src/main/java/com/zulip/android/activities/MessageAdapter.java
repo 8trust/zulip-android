@@ -204,7 +204,6 @@ public class MessageAdapter extends ArrayAdapter<Message> {
         tile.setTag(R.id.messageID, message.getID());
 
         return tile;
-
     }
 
     /**
