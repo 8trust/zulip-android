@@ -40,8 +40,12 @@ import android.text.style.TextAppearanceSpan;
 import android.text.style.TypefaceSpan;
 import android.text.style.URLSpan;
 import android.text.style.UnderlineSpan;
+import android.util.AttributeSet;
+import android.widget.ToggleButton;
 
+import org.ccil.cowan.tagsoup.AttributesImpl;
 import org.ccil.cowan.tagsoup.Parser;
+import org.w3c.dom.Attr;
 import org.xml.sax.Attributes;
 import org.xml.sax.ContentHandler;
 import org.xml.sax.InputSource;
@@ -418,9 +422,9 @@ public class CustomHtmlToSpannedConverter implements ContentHandler {
         if (href != null && !href.startsWith("http")) {
             String prefix;
             if (!href.startsWith("/")) {
-                prefix = baseUri + "/";
+                prefix = baseUri.replace("api", "");
             } else {
-                prefix = baseUri;
+                prefix = baseUri.replace("/api", "");
             }
             href = prefix + href;
         }

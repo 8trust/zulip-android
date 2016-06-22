@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:paddingBottom="10dp"
-    android:padding="16dp"
-    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="55dp"
+        android:background="@drawable/bg_header" >
 
     <ImageView
         android:contentDescription="@string/login_welcome_blurb"
         android:adjustViewBounds="true"
-        android:id="@+id/android:icon2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center|center_horizontal"
-        android:padding="10dp"
-        android:icon="@drawable/ic_launcher" />
+        android:cropToPadding="false"
+        android:focusable="false"
+        android:longClickable="false"
+        android:background="@drawable/ic_launcher"
+        android:padding="50dp" />
 
     <TextView
         android:id="@+id/textView1"
@@ -102,7 +102,8 @@
         android:id="@+id/google_sign_in_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp" >
+        android:visibility="invisible"
+        tools:visibility="invisible" >
     </com.google.android.gms.common.SignInButton>
 
     <TextView
